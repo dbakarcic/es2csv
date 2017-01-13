@@ -63,7 +63,7 @@ class Es2csv:
 
         self.num_results = 0
         self.scroll_ids = []
-        self.scroll_size = 100
+        self.scroll_size = 1000
         self.scroll_time = '30m'
 
         self.csv_headers = list(META_FIELDS) if self.opts.meta_fields else []
