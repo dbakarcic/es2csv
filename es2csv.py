@@ -221,7 +221,7 @@ class Es2csv:
         if self.num_results > 0:
             self.num_results = sum(1 for line in open(self.tmp_file, 'r'))
             if self.num_results > 0:
-                self.csv_headers.sort()
+                #self.csv_headers.sort()
                 output_file = open(self.opts.output_file, 'a')
                 csv_writer = csv.DictWriter(output_file, fieldnames=self.csv_headers, delimiter=self.opts.delimiter)
                 csv_writer.writeheader()
